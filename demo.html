@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    用户名： <input type="text" value="请输入用户名" name="username" /> <br />
+    <!--type="text" 是一个文本框 -->
+    昵称： <input type="text" value="请输入昵称" name="nicheng" /> <br />
+    密码： <input type="password" name="pwd" /><br />
+    <!--type="text" 是一个密码框 -->
+    性别： 男 <input type="radio" name="sex" checked="checked" /> 女<input
+      type="radio"
+      name="sex"
+    /><br />
+    爱好： 睡觉<input type="checkbox" name="hobby" /> 看电影<input
+      type="checkbox"
+      name="hobby"
+    />
+    打篮球<input type="checkbox" name="hobby" /> 弹钢琴<input
+      type="checkbox"
+      name="hobby"
+      checked="checked"
+    />
+    <br />
+    普通按钮需要value值
+    <input type="button" value="手机获取验证码" />
+    <input type="submit" />
+    <input type="reset" />
+    <input type="image" src="1.jpg" width="300" height="200" /><br />
+    上传头像：
+    <!-- 文件域 上传文件用的-->
+    <input type="file" />
+    <!-- radio 单选      checkbox多选   图片提交按钮 里面必须包含src属性-->
+    <h4>第一种用法：label直接包含 表单</h4>
+    <label>用户名： <input type="text"</label>
+    <h4>第二种方法：通过for 和id 来控制的</h4>
+    <label for="nicheng">昵称</label>
+    <input type="text" id="nc" /> 用户留言：<textarea
+      name=""
+      id=""
+      cols="30"
+      rows="10"
+    ></textarea
+    ><br />
+    <!-- cols和rows不用，后期用CSS处理-->
+    籍贯： 省份
+    <select>
+      <option>请选择省份</option>
+      <option selected="selected">北京</option>
+      <option>南京</option>
+      <option>上海</option>
+      <option>天京</option>
+      <option>重庆</option>
+    </select>
+
+    <select>
+      <option>请选择城市</option>
+      <option>青浦区</option>
+      <option>嘉定区</option>
+      <option>朝阳区</option>
+      <option>太兴区</option>
+      <option>金山区</option></select
+    ><br />
+    <!-- selected="selected" 默认选中北京-->
+    <form action="#">
+      用户名：<input type="text" name="username" /><br />
+      密码： <input type="text" name="pwd" /><br />
+      <input type="submit" />
+      <input type="reset" />
+      <!-- actiond的属性值：用于指定接受并处理表单数据的服务器程序的url地址
+      method后面有两个属性可以选择get和post 用于设置表单的提交方式，其取值为get和post-->
+    </form>
+  </body>
+</html>
